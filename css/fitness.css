@@ -1,0 +1,365 @@
+*{  /*stylis all the elements*/
+    padding: 0;
+    margin: 0;
+    text-decoration: none;  /*takes outs under line from the lists*/
+    list-style: none;  /* takes outs the dots   */
+    box-sizing: border-box; /* *all elements are sized in this more intuitive way */
+  }
+  *, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+}
+  body{
+    font-family: montserrat;
+    
+  }
+
+
+
+.navigationBar{
+    background:#000000;  /* the navigation bar*/
+    height: 130px;
+    width: 100%;
+    position: fixed;
+    z-index: 101;
+    opacity: 0.7;
+  }
+  
+  label.topLogo{
+    padding-left:30px;  /* style of logo*/
+    line-height: 180px;
+  }
+
+  
+  .navigationBar ul{
+    float: right;               
+    margin-right: 40px;  /*list right side of the nav with margin 20px right*/
+  }
+  
+  .navigationBar ul li{
+    display: inline-block;  /* display list items horizontally instead of vertically */ 
+    line-height: 130px; /* space between two lines. In this case top and the nav options  is 80px beacuse it fits perfectly in middel.  */
+    margin: 0 5px; /* top and bottom margins are 0px and right and left are 5px*/
+  }
+  
+  .navigationBar ul li a{      /* easear to find what i am styling */
+    color: white;
+    font-size: 15px;  /*options on the nav bar.*/
+    padding: 10px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;  /*capitel letters */
+  }
+  a.active, a:hover{
+    background: #466a75; /*when you hover over a option. transforms in 0.5 sec. */
+    transition: .5s;
+  }
+  
+  .checkbtn{
+    font-size: 30px;   /*for the check button */
+    color: white;
+    float: right;
+    line-height: 80px; /*so that it in the middel */
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;  /* the nav doesn't meny doesn't show up  */
+  }
+  
+  #check{
+    display: none;  /*the check mark doens't show up */
+  }
+  
+  
+  
+  @media (max-width: 952px){  /*second level of repoens*/
+    label.topLogo img{
+    width: 150px;
+        height: 55px;
+      padding-left: 0px;  /*Everythin in the nav becomes a litte smallerl looks better */
+    }
+    .navigationBar ul li a{
+      font-size: 15px;
+    }
+      
+        .fixed-bg {
+    min-height: 700px;  /*change of size of background pic */
+    }
+      div.hi-z{
+          width:100%; /*Change the size of every thing to match the site*/
+          padding-bottom: 600px;
+          padding-left: 0px;
+          padding-top: 200px;
+          
+           background: rgba(0, 39, 54, 0.2);
+      }
+      
+      
+  }
+  
+  
+  
+  @media (max-width: 850px){  /*third level*/
+    .checkbtn{
+      display: block;   /* the 3line bars showes up when the sites width gets smaller the 850px  */
+      line-height: 130px;
+    }
+   .navigationBar ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #0c0d0e;
+      top: 130px;
+      left: -100%; /*The list doesn't show up at the begenning it is hidden in the left side of the screen */
+      text-align: center;
+      transition: all .5s; /*the transition of meny coming from the left to right takes 0.5s */
+    }
+   .navigationBar ul li{
+      display: block;  /*displays in a bloxk type view under each other */
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  .navigationBar ul li a{
+      font-size: 20px;  /*size of the texts  */
+    }
+   a:hover, a.active{
+      background: none;  /* so now it doesn't have any background. So when you hover over only the text changes color */
+      color: #000233;
+    }
+    #check:checked ~ ul{
+      left: 0; /*when you check/click the three line bar the meny comes from the left -100% becomes 0%. os now it is in the right place */
+    }
+      
+      .background-image-text{
+          font-size: 200%;
+      }
+     
+  }
+  
+  
+  
+  .fixed-bg {
+      background-image: url("../Pic/bg.jpg"); /*background picture */
+       /*minimum height*/
+      background-attachment: fixed;  /* The background image will not scroll with the page */
+      background-position: center center;
+      background-repeat: no-repeat; 
+      background-size: cover;
+     
+  }
+  
+ 
+  
+  
+  
+  .hi-z { /*the background color imgage */
+      color: white;  /*Applies to every thing beside the backgroungd pic  */  
+      text-align: left;
+      width: 100%;
+      padding-left: 0px;
+      
+      background: rgba(0, 0, 0, 0.3); /*A little transparent*/
+  
+  }
+
+  /*The background img texteffect */
+  .background-image-text{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    top: 40%;
+    left: 0;
+    right: 0;
+        font-size: 300%;
+    
+  }
+  
+  .java span{
+    opacity: 0;
+    transition: all 1s ease;
+    
+  }
+  .java span.fade{
+    opacity: 1;
+    color:rgb(207, 135, 0);
+  }
+  /*The background img texteffect end */
+  
+
+
+
+  .BodyPartsCardList{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgb(2, 93, 129);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.BodyPartCard:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+     .BodyPartCard{
+          width: 400px;
+          margin: 20px;
+          border-radius: 10%;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+      cursor: pointer;
+      transition: 0.4s;
+         }
+     
+     .BodyPartImage img{
+       width: 100%;
+       border-radius: 10%;
+       height: 300px;
+      }
+     
+     .BodyPartTitle{
+      color: cornsilk;
+       text-align: center;
+       padding: 10px;
+      }
+     
+     .BodyPartDes{  
+       text-align: center;          
+     }
+
+     .BodyPartDes button{
+       margin-bottom: 10px;
+       background-color: white;
+       border: 1px solid black;
+       border-radius: 5px;
+       padding:10px;
+     }
+
+     .BodyPartDes  button:hover{
+       background-color: black;
+       color: white;
+       transition: .5s;
+       cursor: pointer;
+     }
+     
+
+
+     /* The motivation blog post*/
+     .blog-post{
+      margin: 140px auto;
+      width: 90%;
+      max-width: 98rem;
+      padding: 5rem;
+      background-color: #fff;
+      box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      
+      border-radius: 0.8rem;
+      
+    }
+  
+    .blog-post_img{
+      max-width: 35rem;
+      min-width: 35rem;
+      height: 30rem;
+      transform: translateX(-8rem);
+      position: relative;
+    }
+    .blog-post_img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 0.8rem;
+    }
+  
+    .blog-post_img::before{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to right, rgba(79, 172, 254, 0.8), rgba(0, 242,254,0.8));
+      box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0,0,0,.05);
+      border-radius: .8rem;
+  
+    }
+  
+    .blog-post_title{
+      font-size: 2.5rem;
+      margin: 1.5rem 0 2rem;
+      text-transform: uppercase;
+      color: #4facfe;
+    }
+  
+    .blog-post_text{
+      margin-bottom: 3rem;
+      font-size: 1.4rem;
+      color: rgba(0, 0, 0, 0.7);
+    
+    }
+  
+    .blog-post_cta{
+      display: inline-block;
+      padding: 1.5rem 3rem;
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+      color: #fff;
+      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+      border-radius: 0.8rem;
+      text-decoration: none;
+    }
+  
+    .blog-post_cta:hover {
+      background-image: linear-gradient(to right, #00f2fe 0%,  #4facfe 100%);
+    }
+  
+    @media(max-width: 1068px){
+      .blog-post{
+        max-width: 80rem;
+      }
+  
+      .blog-post_img{
+        max-width: 30rem;
+        min-width: 30rem;
+      }
+  
+    }
+  
+    @media(max-width: 868px){
+      .blog-post{
+       max-width: 70rem;
+      }
+    }
+  
+    @media(max-width: 768px){
+      .blog-post{
+        padding: 2.5rem;
+        flex-direction: column;
+      }
+  
+      .blog-post_img{
+        max-width: 100%;
+        min-width: 100%;
+        transform: translate(0, -8rem);
+      }
+  
+    }
+     /* The motivation blog post end*/
+  
+
+  .footer {
+    text-align: center;
+    padding: 1%;
+    background-color: grey;
+    margin-top: 30px;
+  }
