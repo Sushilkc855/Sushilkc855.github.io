@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jensen Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fitness.css">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  </head>
+
+<body>
+
+  <section class="navigationBar">
+    
+    <input type="checkbox" id="check"> <!--The checkbox will be checked and the menu bar is shown and when you again click on those bars, the checkbox will be unchecked and that shown menu bar will be hidden. This process is only done by HTML <input type="checkbox"> tag and <label> tag. -->
+      
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i> <!-- Includes the group meny icon --> 
+    </label>
+   
+      <label class="topLogo"> <img src="../Pic/logo.png" alt="Logo" width="250px" height="75px" >
+      </label>
+   
+      <ul>
+      <li><a href="FItness.html">Home</a></li>
+      <li><a class="active">Traning Guide</a></li>
+      <li><a href="#">Find a gym</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About us</a></li>
+    </ul>        
+ 
+</section>
+    
+<div class="fixed-bg">  <!--Everythink inside this so it is just the background.  -->     
+<div class="hi-z" >
+  <style>
+    .fixed-bg{
+      min-height: 200px;
+    }
+    .hi-z{
+      padding-top: 200px;
+      padding-bottom: 280px;
+    }
+  </style>
+<div class="background-image-text">
+
+  <h1 class="java">Train abs</h1>
+           
+  </div>				  					  
+        
+  
+</div>
+</div>
+<script src="fitness.js"></script>
+
+
+     <div class="container">
+          <main class="grid">
+            <article>
+              <img src="../Pic/abs.jpg" alt="">
+              <div class="text">
+                <h3> Dumbbell crunch</h3>
+                <p>Lie on your back, holding a dumbbell or weight plate across your chest in both hands. Raise your torso, then lower it, maintaining tension in your uppers abs throughout.</p>
+                  <button> Learn more </button>
+                  <button>Watch a video</button>
+                </div>
+            </article>
+
+            <article>
+              <img src="../Pic/abs.jpg" alt="">
+              <div class="text">
+                <h3> Hanging leg raise</h3>
+                <p>Start in a dead hang with your legs straight and your knees and ankles touching. Keep them together as your use your lower abs to raise them, then lower back to the start under control. </p>
+                  <button>Learn more </button>
+                  <button>Watch a video</button>
+                </div>
+            </article>
+
+            <article>
+              <img src="../Pic/abs.jpg" alt="">
+              <div class="text">
+                <h3> Plank</h3>
+                <p>Maintain a strict plank position, with your hips up, your glutes and core braced, and your head and neck relaxed. Breathing slowly and deeply, hold the position for as long as possible.</p>
+                  <button>Learn more </button>
+                  <button>Watch a Video</button>
+                </div>
+            </article>
+
+            <article>
+              <img src="../Pic/abs.jpg" alt="">
+              <div class="text">
+                <h3> Mountain climbers</h3>
+                <p>Place the Bosu ball bubble side down. Start in a plank position, gripping the edges of the flat side of the ball.
+                   Bring right knee in toward left elbow, then left knee in toward right elbow (like mountain climbers). Repeat, running legs to opposite elbows as quickly as possible for 30 seconds.</p>
+                  <button>Learn more </button>
+                  <button>Watch a Video</button>
+                </div>
+            </article>
+
+            <article>
+              <img src="../Pic/abs.jpg" alt="">
+              <div class="text">
+                <h3>  Crunch</h3>
+                <p>Lie on your back with your knees bent and feet planted, and your arms crossed across your chest. Raise your torso using your abs, then lower. Your upper abs will already be close to fatigue but try to hold the top position of each rep for at least one second to make them work as hard as possible.</p>
+                  <button>Learn more </button>
+                  <button>Watch a Video</button>
+                </div>
+            </article>
+
+            <article>
+              <img src="../Pic/abs.jpg" alt="">
+              <div class="text">
+                <h3>  Russian twist</h3>
+                <p>Sit on the floor with your knees bent and heels on the ground. Your torso should be at the top of the crunch position, forming a 45° angle to the ground. Twist your torso from side to side, moving in a smooth and controlled manner.</p>
+                  <button>Learn more </button>
+                  <button>Watch a Video</button>
+                </div>
+            </article>
+          </main>
+     </div>
+     
+     <style>
+       body{
+         background-color: rgb(88, 88, 88);
+       }
+       .grid{
+        display: flex;
+    justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+         align-items: center;
+         margin-top: 30px;
+       }
+
+       .grid > article{
+         background: #eee5e9;
+         border: none;
+         box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+         border-radius: 20px;
+         text-align: center;
+         width: 400px;
+         transition: transform .3s;
+         margin-top: 20px;
+
+       }
+
+       .grid>article:hover{
+         transform: translateY(5px);
+         box-shadow:  2px 2px 26px 0px rgba(0, 0, 0, 0.3);
+       }
+
+       .grid > article img{
+         width: 100%;
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;
+
+       }
+
+       .text{
+         padding: 0 20px 20px;
+       }
+
+       .text h3{
+         text-transform: uppercase;
+       }
+
+       .text button{
+         background: #ef6f6c;
+         border-radius: 20px;
+         border:none;
+         color:#fff;
+         padding: 10px;
+         width: 100%;
+         font-weight:600;
+         text-transform: uppercase;
+         cursor: pointer;
+         margin-bottom: 10px;
+       }
+
+       
+         .grid > article{
+           text-align: center;
+         }
+       
+
+
+     </style>
+    
+
+<div class="footer">
+  &copy; Jensen Norra Gymnasium | Sushil K C
+</div>
+      
+    </body>
+</html>
+  
