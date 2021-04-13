@@ -142,7 +142,7 @@
   
   
   .fixed-bg {
-      background-image: url("../Pic/bg.jpg"); /*background picture */
+      background-image: url("../pic/bg.jpg"); /*background picture */
        /*minimum height*/
       background-attachment: fixed;  /* The background image will not scroll with the page */
       background-position: center center;
