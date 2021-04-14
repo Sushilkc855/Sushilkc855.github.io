@@ -198,8 +198,8 @@
     margin-top: 150px;
   flex-wrap: wrap;
   width: 100%;
-  /*background-color: rgb(2, 93, 129);*/
-      background-color: #ededed;
+  background-color: rgb(2, 93, 129);
+      
   padding-top: 100px;
   padding-bottom: 100px;
 }
